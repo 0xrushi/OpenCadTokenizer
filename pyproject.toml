@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cadtokenizer"
+version = "0.1.0"
+description = "Primitive VQ-VAE, native vocabulary alignment, and joint CAD instruction training"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.5", "numpy", "transformers>=4.45", "peft>=0.13", "accelerate>=1.0", "tokenizers"]
+
+[project.optional-dependencies]
+evaluation = ["cadquery>=2.5,<3", "scipy>=1.10,<2", "matplotlib>=3.7,<4", "Pillow>=10"]
+
+[tool.setuptools.packages.find]
+include = ["cadtokenizer*"]

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -6 80 78" width="400" height="390" role="img" aria-label="A triangle and a much smaller circle inside it, drawn to their relative scale">
+<rect x="-8" y="-6" width="80" height="78" fill="#FAF9F5"/>
+<g stroke="#DEDBD0" stroke-width=".5">
+<path d="M0 0H64M0 16H64M0 32H64M0 48H64M0 64H64M0 0V64M16 0V64M32 0V64M48 0V64M64 0V64"/></g>
+<path d="M9 54L53 54L31 10Z" fill="none" stroke="#C96442" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="31" cy="41" r="8" fill="#FAF9F5" stroke="#3F75A8" stroke-width="1.5"/>
+<g fill="#C96442"><circle cx="9" cy="54" r="1.8"/><circle cx="53" cy="54" r="1.8"/><circle cx="31" cy="10" r="1.8"/></g>
+<g font-family="monospace" font-size="4" fill="#5E5D59"><text x="2" y="59">9,9</text><text x="51" y="59">53,9</text><text x="34" y="8">31,53</text><text x="2" y="67" fill="#C96442">triangle: scale 21</text><text x="38" y="67" fill="#3F75A8">circle: scale 8</text></g>
+</svg>

@@ -1,0 +1,82 @@
+# Downloaded datasets and extracted geometry
+/data/raw/
+/data/extracted/
+/data/prepared/
+/data/external/
+
+# Training, inference, evaluation, and downloaded model artifacts
+/artifacts/
+/checkpoints/
+/models/
+/outputs/
+/runs/
+/wandb/
+events.out.tfevents.*
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.gguf
+
+# Local launcher state and model/download caches
+/.runtime/
+/.cache/
+
+# Credentials and machine-local settings (keep example env files publishable)
+/.aws/
+/.ssh/
+/.codex/
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+id_rsa
+id_ed25519
+/configs/
+!/configs/
+/configs/*
+!/configs/train.json
+!/configs/paper_reference.json
+
+# Python environments, bytecode, packaging, and test/tool caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# Local logs, temporary files, and editor/OS state
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+
+# Keep the public README; retain other Markdown notes locally
+*.md
+*.markdown
+!/README.md
+
+.agents/
+configs/tokenizer-*
+configs/benchmark-*

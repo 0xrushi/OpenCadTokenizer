@@ -1,0 +1,887 @@
+{
+  "review_date": "2026-10-30",
+  "scope": "Read-only local artifact review; no inference, retraining or deployment.",
+  "benchmarks": {
+    "vanilla": {
+      "label": "Vanilla text v2 \u00b7 greedy",
+      "metrics_path": "artifacts/benchmark-vanilla-text-v2-1024/metrics.json",
+      "metrics_sha256": "74fafec1d95758d2e073a6744c7b53db5ad19c5f94417f239e784b9a6b72e219",
+      "manifest_sha256": "5510ef1147814b6ccf8c85f6d690c0f8d5a4f8e0fe897d92fc77d4833ebbf92e",
+      "case_content_sha256": "38f63e0e8bc92f0e4ad522443b115551c1aaee77f91810ecdf90557fd229f840",
+      "tasks": {
+        "generation": {
+          "attempted": 200,
+          "invalid_predictions": 28,
+          "invalid_references": 4,
+          "failure_categories": {
+            "syntax_invalid": 9,
+            "invalid": 19
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.8197590027504685,
+            "F1-Ext": 0.883419689119171,
+            "CD": 0.42114997116472735,
+            "COV": 0.2976190476190476,
+            "JSD": 0.18244662354844918,
+            "MMD": 0.06191313170907454,
+            "IR": 0.14,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 81.97590027504685,
+            "F1-Ext": 88.3419689119171,
+            "CD": 42.114997116472736,
+            "COV": 29.761904761904763,
+            "JSD": 18.244662354844916,
+            "MMD": 6.191313170907454,
+            "IR": 14.000000000000002,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.8197590027504685,
+            "F1-Ext": 0.883419689119171,
+            "type_means": {
+              "line": 0.7822399771821164,
+              "arc": 0.8147465437788018,
+              "circle": 0.8622904872904874,
+              "extrusion": 0.883419689119171
+            },
+            "included_counts": {
+              "line": 161,
+              "arc": 31,
+              "circle": 42,
+              "extrusion": 193
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.7161950594588297,
+            "F1-Ext": 0.8525,
+            "type_means": {
+              "line": 0.8092129184809702,
+              "arc": 0.5703206640919011,
+              "circle": 0.7690515958036175,
+              "extrusion": 0.8525
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.42114997116472735,
+            "COV": 0.2976190476190476,
+            "MMD": 0.06191313170907454,
+            "paired_count": 168,
+            "JSD": 0.18244662354844918
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.42114997116472735,
+            "COV": 0.2857142857142857,
+            "MMD": 0.06299029620462997,
+            "paired_count": 168,
+            "JSD": 0.17892315933743674
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.0,
+          "copied_source_rate": null
+        },
+        "editing": {
+          "attempted": 800,
+          "invalid_predictions": 25,
+          "invalid_references": 24,
+          "failure_categories": {
+            "invalid": 25
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.9449319721827495,
+            "F1-Ext": 0.9672083333333333,
+            "CD": 0.06381153493401266,
+            "COV": 0.5923984272608126,
+            "JSD": 0.012469162781811682,
+            "MMD": 0.012652142903097978,
+            "IR": 0.03125,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 94.49319721827494,
+            "F1-Ext": 96.72083333333333,
+            "CD": 6.381153493401266,
+            "COV": 59.23984272608126,
+            "JSD": 1.2469162781811682,
+            "MMD": 1.2652142903097978,
+            "IR": 3.125,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.9449319721827495,
+            "F1-Ext": 0.9672083333333333,
+            "type_means": {
+              "line": 0.9552323923531458,
+              "arc": 0.9413333333333332,
+              "circle": 0.9382301908617697,
+              "extrusion": 0.9672083333333333
+            },
+            "included_counts": {
+              "line": 386,
+              "arc": 25,
+              "circle": 247,
+              "extrusion": 800
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.8161555389720737,
+            "F1-Ext": 0.9672083333333333,
+            "type_means": {
+              "line": 0.910205529116338,
+              "arc": 0.669661266568483,
+              "circle": 0.8685998212314001,
+              "extrusion": 0.9672083333333333
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.06381153493401266,
+            "COV": 0.5923984272608126,
+            "MMD": 0.012652142903097978,
+            "paired_count": 763,
+            "JSD": 0.012469162781811682
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.06381153493401266,
+            "COV": 0.5850515463917526,
+            "MMD": 0.01257124942008388,
+            "paired_count": 763,
+            "JSD": 0.0124458714392197
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.17625,
+          "copied_source_rate": 0.00125
+        }
+      }
+    },
+    "cad": {
+      "label": "CAD step 10,696 \u00b7 greedy",
+      "metrics_path": "artifacts/benchmark-paper-coverage-tok2-final/metrics.json",
+      "metrics_sha256": "f5b733762ed2719ef0e76123d11e57d6166553c7eb603b20689adc62cab9f0c0",
+      "manifest_sha256": "5510ef1147814b6ccf8c85f6d690c0f8d5a4f8e0fe897d92fc77d4833ebbf92e",
+      "case_content_sha256": "38f63e0e8bc92f0e4ad522443b115551c1aaee77f91810ecdf90557fd229f840",
+      "tasks": {
+        "generation": {
+          "attempted": 200,
+          "invalid_predictions": 54,
+          "invalid_references": 4,
+          "failure_categories": {
+            "invalid": 54
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.7825246947631204,
+            "F1-Ext": 0.8674015151515151,
+            "CD": 0.42097169617623614,
+            "COV": 0.5174825174825175,
+            "JSD": 0.12300470217243033,
+            "MMD": 0.051087518223187835,
+            "IR": 0.27,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 78.25246947631203,
+            "F1-Ext": 86.74015151515151,
+            "CD": 42.097169617623614,
+            "COV": 51.74825174825175,
+            "JSD": 12.300470217243033,
+            "MMD": 5.1087518223187836,
+            "IR": 27.0,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.7825246947631204,
+            "F1-Ext": 0.8674015151515151,
+            "type_means": {
+              "line": 0.7929028158463808,
+              "arc": 0.7496080979951948,
+              "circle": 0.8050631704477857,
+              "extrusion": 0.8674015151515151
+            },
+            "included_counts": {
+              "line": 163,
+              "arc": 31,
+              "circle": 39,
+              "extrusion": 200
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.5813841849295983,
+            "F1-Ext": 0.8674015151515151,
+            "type_means": {
+              "line": 0.7786083813722493,
+              "arc": 0.4341518795412238,
+              "circle": 0.5313922938753219,
+              "extrusion": 0.8674015151515151
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.42097169617623614,
+            "COV": 0.5174825174825175,
+            "MMD": 0.051087518223187835,
+            "paired_count": 143,
+            "JSD": 0.12300470217243033
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.42097169617623614,
+            "COV": 0.4642857142857143,
+            "MMD": 0.046571765386667484,
+            "paired_count": 143,
+            "JSD": 0.10970054003728168
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.0,
+          "copied_source_rate": null
+        },
+        "editing": {
+          "attempted": 800,
+          "invalid_predictions": 39,
+          "invalid_references": 24,
+          "failure_categories": {
+            "invalid": 38,
+            "inference_error": 1
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.9280134844197482,
+            "F1-Ext": 0.9599499374217773,
+            "CD": 0.08843560260260089,
+            "COV": 0.5718120805369128,
+            "JSD": 0.013444151380906382,
+            "MMD": 0.014013671541516658,
+            "IR": 0.04875,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 92.80134844197482,
+            "F1-Ext": 95.99499374217773,
+            "CD": 8.84356026026009,
+            "COV": 57.18120805369128,
+            "JSD": 1.3444151380906382,
+            "MMD": 1.401367154151666,
+            "IR": 4.875,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.9280134844197482,
+            "F1-Ext": 0.9599499374217773,
+            "type_means": {
+              "line": 0.942201384678852,
+              "arc": 0.9232323232323232,
+              "circle": 0.9186067453480694,
+              "extrusion": 0.9599499374217773
+            },
+            "included_counts": {
+              "line": 383,
+              "arc": 22,
+              "circle": 239,
+              "extrusion": 799
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.7829264253379691,
+            "F1-Ext": 0.95875,
+            "type_means": {
+              "line": 0.8879114183249343,
+              "arc": 0.6315194805194806,
+              "circle": 0.8293483771694926,
+              "extrusion": 0.95875
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.08843560260260089,
+            "COV": 0.5718120805369128,
+            "MMD": 0.014013671541516658,
+            "paired_count": 745,
+            "JSD": 0.013444151380906382
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.08843560260260089,
+            "COV": 0.5579896907216495,
+            "MMD": 0.014152825564009958,
+            "paired_count": 745,
+            "JSD": 0.013446322217946689
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.13125,
+          "copied_source_rate": 0.0
+        }
+      }
+    },
+    "dpo1": {
+      "label": "CAD + DPO round 1 \u00b7 greedy",
+      "metrics_path": "artifacts/benchmark-paper-coverage-tok2-dpo-r1/metrics.json",
+      "metrics_sha256": "d550d5c8de5d5600964e6c11c13672302c5acfa69b97b7ba3fb0a7622a14f1df",
+      "manifest_sha256": "43f042071af02df24a56256ae61426aec506bb930229cadbdccc7b3b033b6a2a",
+      "case_content_sha256": "38f63e0e8bc92f0e4ad522443b115551c1aaee77f91810ecdf90557fd229f840",
+      "tasks": {
+        "generation": {
+          "attempted": 200,
+          "invalid_predictions": 25,
+          "invalid_references": 4,
+          "failure_categories": {
+            "invalid": 25
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.7406710996877081,
+            "F1-Ext": 0.7701147186147186,
+            "CD": 0.46705067212511525,
+            "COV": 0.4502923976608187,
+            "JSD": 0.13799972849655417,
+            "MMD": 0.05099223572673142,
+            "IR": 0.125,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 74.06710996877081,
+            "F1-Ext": 77.01147186147186,
+            "CD": 46.70506721251152,
+            "COV": 45.02923976608187,
+            "JSD": 13.799972849655418,
+            "MMD": 5.099223572673142,
+            "IR": 12.5,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.7406710996877081,
+            "F1-Ext": 0.7701147186147186,
+            "type_means": {
+              "line": 0.744376876817194,
+              "arc": 0.6834586466165413,
+              "circle": 0.7941777756293885,
+              "extrusion": 0.7701147186147186
+            },
+            "included_counts": {
+              "line": 157,
+              "arc": 19,
+              "circle": 31,
+              "extrusion": 200
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.5617715519980354,
+            "F1-Ext": 0.7701147186147186,
+            "type_means": {
+              "line": 0.7385532875145437,
+              "arc": 0.3420225277368134,
+              "circle": 0.604738840742749,
+              "extrusion": 0.7701147186147186
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.46705067212511525,
+            "COV": 0.4502923976608187,
+            "MMD": 0.05099223572673142,
+            "paired_count": 171,
+            "JSD": 0.13799972849655417
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.46705067212511525,
+            "COV": 0.4387755102040816,
+            "MMD": 0.049656881143133005,
+            "paired_count": 171,
+            "JSD": 0.1350511567913918
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.0,
+          "copied_source_rate": null
+        },
+        "editing": {
+          "attempted": 800,
+          "invalid_predictions": 32,
+          "invalid_references": 24,
+          "failure_categories": {
+            "invalid": 31,
+            "inference_error": 1
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.9344473018585173,
+            "F1-Ext": 0.9494785148101794,
+            "CD": 0.09170147087989038,
+            "COV": 0.6037234042553191,
+            "JSD": 0.01391839319765889,
+            "MMD": 0.014600750261429816,
+            "IR": 0.04,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 93.44473018585174,
+            "F1-Ext": 94.94785148101795,
+            "CD": 9.170147087989038,
+            "COV": 60.37234042553191,
+            "JSD": 1.391839319765889,
+            "MMD": 1.4600750261429816,
+            "IR": 4.0,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.9344473018585173,
+            "F1-Ext": 0.9494785148101794,
+            "type_means": {
+              "line": 0.9410595346362073,
+              "arc": 0.9356725146198831,
+              "circle": 0.9266098563194617,
+              "extrusion": 0.9494785148101794
+            },
+            "included_counts": {
+              "line": 377,
+              "arc": 19,
+              "circle": 237,
+              "extrusion": 799
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.7708672702104112,
+            "F1-Ext": 0.9482916666666666,
+            "type_means": {
+              "line": 0.873867744898935,
+              "arc": 0.6083766233766233,
+              "circle": 0.8303574423556752,
+              "extrusion": 0.9482916666666666
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.09170147087989038,
+            "COV": 0.6037234042553191,
+            "MMD": 0.014600750261429816,
+            "paired_count": 752,
+            "JSD": 0.01391839319765889
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.09170147087989038,
+            "COV": 0.5876288659793815,
+            "MMD": 0.014545737307509065,
+            "paired_count": 752,
+            "JSD": 0.01404807896133776
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.12875,
+          "copied_source_rate": 0.0
+        }
+      }
+    },
+    "dpo2": {
+      "label": "CAD + DPO round 2 \u00b7 greedy",
+      "metrics_path": "artifacts/benchmark-paper-coverage-tok2-dpo-r2/metrics.json",
+      "metrics_sha256": "2866ac1041cc092abfd7d3b79d19ea374c598eb29a37cfd2f29d3e3f4cedbf01",
+      "manifest_sha256": "a5021477040dc4cb92dd07e80e15b41a5506d1bab55a73fd83b4c756cc8a635a",
+      "case_content_sha256": "38f63e0e8bc92f0e4ad522443b115551c1aaee77f91810ecdf90557fd229f840",
+      "tasks": {
+        "generation": {
+          "attempted": 200,
+          "invalid_predictions": 36,
+          "invalid_references": 4,
+          "failure_categories": {
+            "invalid": 36
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.7644771812993642,
+            "F1-Ext": 0.7997186147186147,
+            "CD": 0.5076592650997681,
+            "COV": 0.4875,
+            "JSD": 0.1329584505412828,
+            "MMD": 0.04829650217237118,
+            "IR": 0.18,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 76.44771812993642,
+            "F1-Ext": 79.97186147186147,
+            "CD": 50.76592650997681,
+            "COV": 48.75,
+            "JSD": 13.29584505412828,
+            "MMD": 4.829650217237118,
+            "IR": 18.0,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.7644771812993642,
+            "F1-Ext": 0.7997186147186147,
+            "type_means": {
+              "line": 0.7580938213074054,
+              "arc": 0.740079365079365,
+              "circle": 0.7952583575113219,
+              "extrusion": 0.7997186147186147
+            },
+            "included_counts": {
+              "line": 157,
+              "arc": 28,
+              "circle": 33,
+              "extrusion": 200
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.6381189596866662,
+            "F1-Ext": 0.7997186147186147,
+            "type_means": {
+              "line": 0.8075852522984193,
+              "arc": 0.49874708624708625,
+              "circle": 0.6080245405144931,
+              "extrusion": 0.7997186147186147
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.5076592650997681,
+            "COV": 0.4875,
+            "MMD": 0.04829650217237118,
+            "paired_count": 160,
+            "JSD": 0.1329584505412828
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.5076592650997681,
+            "COV": 0.45408163265306123,
+            "MMD": 0.048418114435971334,
+            "paired_count": 160,
+            "JSD": 0.12800403135179336
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.0,
+          "copied_source_rate": null
+        },
+        "editing": {
+          "attempted": 800,
+          "invalid_predictions": 37,
+          "invalid_references": 24,
+          "failure_categories": {
+            "invalid": 36,
+            "inference_error": 1
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.9299099051769956,
+            "F1-Ext": 0.9605757196495619,
+            "CD": 0.09057312487254239,
+            "COV": 0.5676037483266398,
+            "JSD": 0.014774975162988868,
+            "MMD": 0.014945620790373012,
+            "IR": 0.04625,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 92.99099051769956,
+            "F1-Ext": 96.0575719649562,
+            "CD": 9.057312487254238,
+            "COV": 56.760374832663985,
+            "JSD": 1.4774975162988868,
+            "MMD": 1.494562079037301,
+            "IR": 4.625,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.9299099051769956,
+            "F1-Ext": 0.9605757196495619,
+            "type_means": {
+              "line": 0.9385155803023153,
+              "arc": 0.9181286549707601,
+              "circle": 0.9330854802579115,
+              "extrusion": 0.9605757196495619
+            },
+            "included_counts": {
+              "line": 390,
+              "arc": 19,
+              "circle": 233,
+              "extrusion": 799
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.7848911604102137,
+            "F1-Ext": 0.959375,
+            "type_means": {
+              "line": 0.875286769415911,
+              "arc": 0.6351904761904762,
+              "circle": 0.8441962356242542,
+              "extrusion": 0.959375
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.09057312487254239,
+            "COV": 0.5676037483266398,
+            "MMD": 0.014945620790373012,
+            "paired_count": 747,
+            "JSD": 0.014774975162988868
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.09057312487254239,
+            "COV": 0.5579896907216495,
+            "MMD": 0.014857401635688383,
+            "paired_count": 747,
+            "JSD": 0.014969481165146464
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.1375,
+          "copied_source_rate": 0.0
+        }
+      }
+    },
+    "best8": {
+      "label": "CAD step 10,696 \u00b7 best-of-8",
+      "metrics_path": "artifacts/benchmark-paper-coverage-tok2-bestofk8/metrics.json",
+      "metrics_sha256": "65f8149ab6b4e5c82623741ded4dcdbf6b1ff3bee3376ff7d803c267b85ad7a6",
+      "manifest_sha256": "5510ef1147814b6ccf8c85f6d690c0f8d5a4f8e0fe897d92fc77d4833ebbf92e",
+      "case_content_sha256": "38f63e0e8bc92f0e4ad522443b115551c1aaee77f91810ecdf90557fd229f840",
+      "tasks": {
+        "generation": {
+          "attempted": 200,
+          "invalid_predictions": 24,
+          "invalid_references": 4,
+          "failure_categories": {
+            "invalid": 24
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.7879278458850415,
+            "F1-Ext": 0.8642424242424243,
+            "CD": 0.44787541520916224,
+            "COV": 0.5465116279069767,
+            "JSD": 0.09365417071350446,
+            "MMD": 0.044258938879529496,
+            "IR": 0.12,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 78.79278458850415,
+            "F1-Ext": 86.42424242424242,
+            "CD": 44.78754152091622,
+            "COV": 54.65116279069767,
+            "JSD": 9.365417071350446,
+            "MMD": 4.42589388795295,
+            "IR": 12.0,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.7879278458850415,
+            "F1-Ext": 0.8642424242424243,
+            "type_means": {
+              "line": 0.8037307324410291,
+              "arc": 0.7646418098031,
+              "circle": 0.7954109954109955,
+              "extrusion": 0.8642424242424243
+            },
+            "included_counts": {
+              "line": 159,
+              "arc": 31,
+              "circle": 37,
+              "extrusion": 200
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.5994719434434485,
+            "F1-Ext": 0.8642424242424243,
+            "type_means": {
+              "line": 0.800633057365511,
+              "arc": 0.4599262254964009,
+              "circle": 0.5378565474684335,
+              "extrusion": 0.8642424242424243
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.44787541520916224,
+            "COV": 0.5465116279069767,
+            "MMD": 0.044258938879529496,
+            "paired_count": 172,
+            "JSD": 0.09365417071350446
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.44787541520916224,
+            "COV": 0.5408163265306123,
+            "MMD": 0.04199545166162813,
+            "paired_count": 172,
+            "JSD": 0.0868734634216445
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.0,
+          "copied_source_rate": null
+        },
+        "editing": {
+          "attempted": 800,
+          "invalid_predictions": 39,
+          "invalid_references": 24,
+          "failure_categories": {
+            "invalid": 38,
+            "inference_error": 1
+          },
+          "raw_metrics": {
+            "F1-Skt": 0.9280134844197482,
+            "F1-Ext": 0.9599499374217773,
+            "CD": 0.08843560260260089,
+            "COV": 0.5718120805369128,
+            "JSD": 0.013444151380906382,
+            "MMD": 0.014013671541516658,
+            "IR": 0.04875,
+            "VLM": null,
+            "HE": null
+          },
+          "table_metrics": {
+            "F1-Skt": 92.80134844197482,
+            "F1-Ext": 95.99499374217773,
+            "CD": 8.84356026026009,
+            "COV": 57.18120805369128,
+            "JSD": 1.3444151380906382,
+            "MMD": 1.401367154151666,
+            "IR": 4.875,
+            "VLM": null,
+            "HE": null
+          },
+          "cadfusion_f1_details": {
+            "F1-Skt": 0.9280134844197482,
+            "F1-Ext": 0.9599499374217773,
+            "type_means": {
+              "line": 0.942201384678852,
+              "arc": 0.9232323232323232,
+              "circle": 0.9186067453480694,
+              "extrusion": 0.9599499374217773
+            },
+            "included_counts": {
+              "line": 383,
+              "arc": 22,
+              "circle": 239,
+              "extrusion": 799
+            }
+          },
+          "all_sample_count_f1": {
+            "F1-Skt": 0.7829264253379691,
+            "F1-Ext": 0.95875,
+            "type_means": {
+              "line": 0.8879114183249343,
+              "arc": 0.6315194805194806,
+              "circle": 0.8293483771694926,
+              "extrusion": 0.95875
+            }
+          },
+          "matched_valid_geometry": {
+            "CD": 0.08843560260260089,
+            "COV": 0.5718120805369128,
+            "MMD": 0.014013671541516658,
+            "paired_count": 745,
+            "JSD": 0.013444151380906382
+          },
+          "all_valid_reference_geometry": {
+            "CD": 0.08843560260260089,
+            "COV": 0.5579896907216495,
+            "MMD": 0.014152825564009958,
+            "paired_count": 745,
+            "JSD": 0.013446322217946689
+          },
+          "vlm_scored_samples": 0,
+          "human_rank_count": 0,
+          "human_scored_samples": 0,
+          "exact_sequence_rate": 0.13125,
+          "copied_source_rate": 0.0
+        }
+      }
+    }
+  },
+  "model_files": {
+    "vanilla_default": {
+      "path": "artifacts/sft-vanilla-text-v2/final_adapter/adapter_model.safetensors",
+      "sha256": "a10ad14aa7321716f75297bbc06ee025282431f085d8deee86bf08de81ed0a46"
+    },
+    "vanilla_step3056": {
+      "path": "artifacts/sft-vanilla-text-v2/checkpoints/checkpoint-3056/adapter_model.safetensors",
+      "sha256": "a10ad14aa7321716f75297bbc06ee025282431f085d8deee86bf08de81ed0a46"
+    },
+    "cad_step10696": {
+      "path": "artifacts/sft-vastai-paper-coverage-tok2-v1/checkpoints/checkpoint-10696/adapter_model.safetensors",
+      "sha256": "dc86da1f941cadf769bb0907c04a6f91830094cafd5fdb6d3651414481a6c193"
+    },
+    "dpo_round1": {
+      "path": "artifacts/dpo-r1/final_adapter/adapter_model.safetensors",
+      "sha256": "ca150b316d1f91a0ecd4c96a5c85570320b7bee55caa72b26919d1035b2bca77"
+    },
+    "cad_tokenizer": {
+      "path": "artifacts/tokenizer-paper-coverage-candidate-v2/best.pt",
+      "sha256": "147b91984f1bf22e50d3fa934a001b79da2f1241e41f275b62d9503479c366af"
+    },
+    "cad_alignment": {
+      "path": "artifacts/alignment-paper-coverage-trailer-v2/alignment.pt",
+      "sha256": "8d683fe13c438d11f15dc2fcdd9ad85c03040150ca09116a5bedef55070a34d1"
+    }
+  },
+  "vanilla_final_equals_step3056": true,
+  "paper_comparison": {
+    "source": "https://arxiv.org/html/2509.21150v2#S4.T1",
+    "verified_against_primary_source": "2026-10-30",
+    "local_reference_path": "configs/paper_reference.json",
+    "local_reference_sha256": "64ba3efed129ac234b0f31d6e2d126071491e8b81f7f6b0610512eba2160175e",
+    "table": "Table 1(a): editing; Table 1(b): generation",
+    "published_cad_tokenizer": {
+      "generation": {
+        "F1-Skt": 77.9,
+        "F1-Ext": 84.7,
+        "CD": 26.7,
+        "COV": 54.5,
+        "JSD": 7.26,
+        "MMD": 3.74,
+        "IR": 1.5,
+        "VLM": 3.82,
+        "HE": 1.62
+      },
+      "editing": {
+        "F1-Skt": 88.6,
+        "F1-Ext": 94.8,
+        "CD": 13.5,
+        "COV": 52.4,
+        "JSD": 2.54,
+        "MMD": 1.97,
+        "IR": 8.38,
+        "VLM": 5.09,
+        "HE": 1.72
+      }
+    },
+    "published_native_text_baseline_invalid_percent": {
+      "generation": 80.5,
+      "editing": 48.6
+    },
+    "comparison_status": "Different test data and implementation; descriptive numerical comparison, not proof of superiority or exact reproduction."
+  },
+  "gui_recommendation": {
+    "tasks": [
+      "generation",
+      "editing"
+    ],
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "adapter": "artifacts/sft-vanilla-text-v2/final_adapter/",
+    "prompt_builder": "cadtokenizer.vanilla.prompt_text",
+    "input_representation": "instruction; also current SEM for editing",
+    "output_representation": "complete SEM program",
+    "decoding": {
+      "do_sample": false,
+      "max_new_tokens": 1024,
+      "stop": "native EOS"
+    },
+    "gui_or_backend_implemented": false,
+    "serving_configuration_changed": false
+  }
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" width="560" height="230" role="img" aria-label="Source: a disc. Target: the same disc with a smaller concentric hole cut in it.">
+<rect width="560" height="230" fill="#FAF9F5"/>
+<g font-family="sans-serif" font-size="13" fill="#141413">
+<text x="120" y="24" text-anchor="middle" font-weight="600">Source</text>
+<text x="440" y="24" text-anchor="middle" font-weight="600">Target</text>
+</g>
+<!-- source disc -->
+<g stroke="#C96442" stroke-width="1.4" stroke-linejoin="round">
+<path d="M50 100V135A70 26 0 0 0 190 135V100Z" fill="#F3DDD2"/>
+<ellipse cx="120" cy="100" rx="70" ry="26" fill="#F3DDD2"/>
+</g>
+<!-- target disc with hole -->
+<g stroke="#C96442" stroke-width="1.4" stroke-linejoin="round">
+<path d="M370 100V135A70 26 0 0 0 510 135V100Z" fill="#F3DDD2"/>
+<ellipse cx="440" cy="100" rx="70" ry="26" fill="#F3DDD2"/>
+</g>
+<ellipse cx="440" cy="100" rx="47" ry="17" fill="#FAF9F5" stroke="#3F75A8" stroke-width="1.6"/>
+<path d="M393 100V118A47 17 0 0 0 487 118V100" fill="none" stroke="#3F75A8" stroke-width="1" stroke-dasharray="3 3" opacity=".6"/>
+<!-- arrow -->
+<path d="M225 110H325" stroke="#5E5D59" stroke-width="1.6" fill="none"/><path d="M325 104L337 110L325 116Z" fill="#5E5D59"/>
+<g font-family="monospace" font-size="11.5" fill="#5E5D59" text-anchor="middle">
+<text x="281" y="96">cut a second circle</text>
+<text x="120" y="190">add: circle, scale 3</text>
+<text x="440" y="190">+ cut: same centre, scale 2</text>
+<text x="281" y="218" fill="#141413" font-family="sans-serif" font-size="12.5">"Subtract a 9-unit radius cylindrical hole at (31, 53)."</text>
+</g>
+</svg>

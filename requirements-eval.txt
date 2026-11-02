@@ -1,0 +1,6 @@
+# Installed only by benchmark-setup inside the cached Unsloth Docker image.
+# Runtime versions are frozen under .runtime/eval-venv/packages.txt.
+cadquery>=2.5,<3
+scipy>=1.10,<2
+matplotlib>=3.7,<4
+Pillow>=10

@@ -1,0 +1,101 @@
+{
+  "downloaded_at_utc": "2026-10-25T19:44:47.154788+00:00",
+  "datasets": [
+    {
+      "dataset": "skexgen",
+      "source_url": "https://drive.google.com/file/d/1so_CCGLIhqGEDQxMoiR--A4CQk4MjuOp/view",
+      "upstream_git_blob_sha1": null,
+      "archive_path": "data/raw/skexgen/cad_data.zip",
+      "archive_bytes": 116702556,
+      "sha256": "e5044bc5ff28ecc38e68afc408c15505ea1eab06ef79dc0c998a6459e71c83f8",
+      "extracted_path": "data/extracted/skexgen",
+      "extracted_bytes": 1218124192,
+      "zip_crc_verified": true,
+      "files": [
+        {
+          "path": "cad_data/train.pkl",
+          "bytes": 509493998,
+          "crc32": "e06eb23e"
+        },
+        {
+          "path": "cad_data/test.pkl",
+          "bytes": 11753417,
+          "crc32": "13262bae"
+        },
+        {
+          "path": "cad_data/val.pkl",
+          "bytes": 12868055,
+          "crc32": "281cbb31"
+        },
+        {
+          "path": "cad_data/train_deduplicate_s.pkl",
+          "bytes": 363539978,
+          "crc32": "9d728cb2"
+        },
+        {
+          "path": "cad_data/train_deduplicate_e.pkl",
+          "bytes": 320082107,
+          "crc32": "ff2205cc"
+        },
+        {
+          "path": "cad_data/train_invalid.pkl",
+          "bytes": 386637,
+          "crc32": "6567582c"
+        }
+      ]
+    },
+    {
+      "dataset": "cadfusion",
+      "source_url": "https://github.com/microsoft/CADFusion/blob/main/data/sl_data/sl_data.zip",
+      "upstream_git_blob_sha1": "e23cdb43efdf55f18359cdf9c5e5691816f2ccba",
+      "archive_path": "data/raw/cadfusion/sl_data.zip",
+      "archive_bytes": 1084518,
+      "sha256": "a080e00591a07420d916e82365d8602ebeab00ffd909f87bc9911b231f2f5ea0",
+      "extracted_path": "data/extracted/cadfusion",
+      "extracted_bytes": 5505380,
+      "zip_crc_verified": true,
+      "files": [
+        {
+          "path": "test.json",
+          "bytes": 280638,
+          "crc32": "985b2579"
+        },
+        {
+          "path": "train.json",
+          "bytes": 4946962,
+          "crc32": "fbab0f05"
+        },
+        {
+          "path": "val.json",
+          "bytes": 277780,
+          "crc32": "0c901ac8"
+        }
+      ]
+    },
+    {
+      "dataset": "cad_editor",
+      "source_url": "https://github.com/microsoft/CAD-Editor/blob/main/data/processed.zip",
+      "upstream_git_blob_sha1": "8e09307eca0f2f722024855a64e56174a182a1d7",
+      "archive_path": "data/raw/cad_editor/processed.zip",
+      "archive_bytes": 6914528,
+      "sha256": "98d01e2b1881f44f38518e43cad7796904ce4a795785569f3e48b87160107f4f",
+      "extracted_path": "data/extracted/cad_editor",
+      "extracted_bytes": 144424153,
+      "zip_crc_verified": true,
+      "files": [
+        {
+          "path": "dataset/train.json",
+          "bytes": 142420453,
+          "crc32": "55e39dee"
+        },
+        {
+          "path": "dataset/test.json",
+          "bytes": 2003700,
+          "crc32": "5a8f49d2"
+        }
+      ]
+    }
+  ],
+  "total_archive_bytes": 124701602,
+  "total_extracted_bytes": 1368053725
+}

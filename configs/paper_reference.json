@@ -1,0 +1,8 @@
+{
+  "source": "https://arxiv.org/html/2509.21150v2#S4.T1",
+  "table": "Table 1, CAD-Tokenizer rows",
+  "units": {"F1-Skt": "percent", "F1-Ext": "percent", "CD": "raw x 100", "COV": "raw x 100", "JSD": "raw x 100", "MMD": "raw x 100", "IR": "percent", "VLM": "0 to 10", "HE": "mean rank"},
+  "direction": {"F1-Skt": "higher", "F1-Ext": "higher", "CD": "lower", "COV": "higher", "JSD": "lower", "MMD": "lower", "IR": "lower", "VLM": "higher", "HE": "lower"},
+  "generation": {"F1-Skt": 77.9, "F1-Ext": 84.7, "CD": 26.7, "COV": 54.5, "JSD": 7.26, "MMD": 3.74, "IR": 1.50, "VLM": 3.82, "HE": 1.62},
+  "editing": {"F1-Skt": 88.6, "F1-Ext": 94.8, "CD": 13.5, "COV": 52.4, "JSD": 2.54, "MMD": 1.97, "IR": 8.38, "VLM": 5.09, "HE": 1.72}
+}

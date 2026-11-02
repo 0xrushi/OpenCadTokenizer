@@ -1,0 +1,43 @@
+Third-party notices
+
+The CADFusion-compatible F1 calculation in `cadtokenizer/bench_metrics.py` adapts
+the mathematics and conditional aggregation of Microsoft's CADFusion
+`src/test/f1_eval.py`. Dequantization and point-cloud evaluation conventions are
+also based on its public utilities. The inspected CADFusion source revision is
+5bef5bb632b66ede9ca3d438b68adca0460e27f9:
+
+F1 calculation:
+https://github.com/microsoft/CADFusion/blob/5bef5bb632b66ede9ca3d438b68adca0460e27f9/src/test/f1_eval.py
+
+Paired geometry:
+https://github.com/microsoft/CADFusion/blob/5bef5bb632b66ede9ca3d438b68adca0460e27f9/src/test/chamfer_dist.py
+
+Distribution metrics:
+https://github.com/microsoft/CADFusion/blob/5bef5bb632b66ede9ca3d438b68adca0460e27f9/src/test/dist_eval.py
+
+Rendering/dequantization utilities:
+https://github.com/microsoft/CADFusion/tree/5bef5bb632b66ede9ca3d438b68adca0460e27f9/src/rendering_utils
+
+CADFusion is provided under the following license:
+
+MIT License
+
+Copyright (c) Microsoft Corporation.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
