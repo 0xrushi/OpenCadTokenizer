@@ -457,6 +457,8 @@ Two LoRA adapters on `meta-llama/Meta-Llama-3-8B` are on the Hugging Face Hub. T
 
 Their benchmark numbers are the "Our plain-text LLaMA · greedy" and "Our CAD tokens · greedy" rows in the tables above. Use the `cadtokenizer` package in this repository to build prompts, decode outputs and validate solids with the CAD kernel. The adapters are staged and uploaded with [scripts/push_to_hf.py](scripts/push_to_hf.py).
 
+**Base model for OpenCAD.** The plain-text LoRA (`Llama-3-8B-Open-CAD-Tokenizer-plaintext-lora`) is the base model for [0xrushi/opencad](https://github.com/0xrushi/opencad), an experimental "Cursor for CAD" harness. OpenCAD is a separate project; this repository provides the model and its benchmarks, and its status is not reflected in the numbers above.
+
 ## Running the project
 
 Local training and inference use an **already-downloaded Unsloth Docker image** through [scripts/cad.sh](scripts/cad.sh). The launcher pins the local image ID and runs with `--pull=never`. It does not pull or build an image or create a host ML environment.
